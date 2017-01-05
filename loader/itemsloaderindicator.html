@@ -1,8 +1,8 @@
 <br><br><br>
 <ol ng-if="!ctrllr.showMessage()">
   <li ng-repeat="item in ctrllr.items">
-    {{ item.short_name }}, {{ item.description }}
-    <button ng-click="ctrllr.onRemove({index: $index});">Remove Item</button>
+    {{ item.name }}, {{ item.short_name }}, {{ item.description }}
+    <button ng-click="ctrllr.onRemove({index: $index});">Don't want this one!</button>
   </li>
 </ol>
 <h2 ng-hide="!ctrllr.showMessage()">Nothing found</h2>
